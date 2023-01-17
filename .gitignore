@@ -1,0 +1,11 @@
+node_modules
+.dumi/tmp
+.dumi/tmp-production
+.DS_Store
+
+/dist
+
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
