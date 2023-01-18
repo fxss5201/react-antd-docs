@@ -1,6 +1,8 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
+  base: '/react-antd-docs',
+  publicPath: '/react-antd-docs/',
   themeConfig: {
     name: 'react-antd',
     nav: [
