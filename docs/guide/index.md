@@ -9,7 +9,11 @@ group:
   order: -1
 ---
 
-react-antd 是使用 [react](https://react.docschina.org/)、[react-router](https://reactrouter.com/en/main)、[react-redux](https://redux.js.org/)、[antd](https://ant-design.antgroup.com/index-cn) 搭建的后台管理系统。
+[react-antd](https://github.com/fxss5201/react-antd) 是由 [create-react-app](https://create-react-app.dev/) 创建，使用 [react](https://react.docschina.org/)、[react-router](https://reactrouter.com/en/main)、[react-redux](https://redux.js.org/)、[antd](https://ant-design.antgroup.com/index-cn) 搭建的后台管理系统。
+
+[demo 演示](https://fxss5201.github.io/react-antd/)。
+
+[antd](https://ant-design.antgroup.com/index-cn) 在 5.0 版本之上。
 
 ## 功能
 
@@ -17,14 +21,10 @@ react-antd 是使用 [react](https://react.docschina.org/)、[react-router](http
 2. 支持多语言
 3. 面包屑导航
 4. 可拖拽排序的 Tabs 导航
-5. Route 扩展，支持 title、icon、权限、水印、面包屑导航、Tabs 导航配置
+5. Route 扩展，支持 title、icon、权限、水印、面包屑导航、Tabs 导航配置、权限配置
 6. 复制粘贴
 7. 代码渲染
 8. Echarts 图表封装
-
-### 待实现
-
-1. Route 扩展支持多层级权限配置
 
 ## 问题反馈
 
