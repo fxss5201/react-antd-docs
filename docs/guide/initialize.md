@@ -17,6 +17,8 @@ git clone https://github.com/fxss5201/react-antd.git
 npm i
 ```
 
+如果不想查看之前的提交记录，可以删除根目录下的 `.git` 文件，重新 `git init`。
+
 ## 运行项目
 
 ```sh

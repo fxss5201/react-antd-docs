@@ -9,6 +9,10 @@ export default defineConfig({
       { title: '指南', link: '/guide' },
       { title: '配置项', link: '/config' }
     ],
+    prefersColor: { default: 'auto' },
+    socialLinks: {
+      github: 'https://github.com/fxss5201/react-antd',
+    },
     footer: `Open-source MIT Licensed | Copyright © 2023-present
     <br />
     Powered by <a href="https://github.com/fxss5201" target="_blank" rel="noreferrer">fxss5201</a>`,
