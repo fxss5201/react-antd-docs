@@ -3,6 +3,9 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   base: '/react-antd-docs',
   publicPath: '/react-antd-docs/',
+  analytics: {
+    baidu: 'acac39fe248c10911e126712aed731b9'
+  },
   styles: [`
     .markdown .dumi-default-source-code pre.prism-code { background-color: #ecf4fa; padding: 1em 1em 1em 3.5em; }
     [data-prefers-color=dark] .markdown .dumi-default-source-code pre.prism-code { background-color: #282c34; }
