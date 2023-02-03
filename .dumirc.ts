@@ -16,7 +16,8 @@ export default defineConfig({
     name: 'react-antd',
     nav: [
       { title: '指南', link: '/guide' },
-      { title: '配置项', link: '/config' }
+      { title: '配置项', link: '/config' },
+      { title: '组件', link: '/components' }
     ],
     prefersColor: { default: 'auto' },
     socialLinks: {
