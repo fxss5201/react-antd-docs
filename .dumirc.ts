@@ -17,7 +17,8 @@ export default defineConfig({
     nav: [
       { title: '指南', link: '/guide' },
       { title: '配置项', link: '/config' },
-      { title: '组件', link: '/components' }
+      { title: '组件', link: '/components' },
+      { title: '示例', link: '/example' }
     ],
     prefersColor: { default: 'auto' },
     socialLinks: {
