@@ -19,7 +19,7 @@ features:
     link: /guide/mock
     description: 支持本地 Mock 服务，多种 Mock 方式定义
   - title: router扩展
-    link: /guide/router-extend
+    link: /guide/router
     description: 在 React Router 上支持 title、icon、水印、面包屑导航、Tabs 导航配置、权限配置、路由缓存
   - title: Antd5
     description: Ant Design 5+版本
