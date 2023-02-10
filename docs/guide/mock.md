@@ -1,6 +1,6 @@
 ---
 title: Mock
-order: 4
+order: 5
 nav:
   title: 指南
   order: -1
@@ -187,6 +187,7 @@ module.exports = function (app) {
   app.use(
     '/api',
     createProxyMiddleware({
+      // 此处默认指向 mock 服务，如有对应后端接口，请指向后端服务
       target: `http://localhost:${port}`,
       changeOrigin: true,
     }),

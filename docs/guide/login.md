@@ -5,8 +5,8 @@ nav:
   title: 指南
   order: -1
 group:
-  title: 基础
-  order: 0
+  title: 详细功能
+  order: 1
 ---
 
 ## 说明
