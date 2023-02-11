@@ -7,3 +7,5 @@ nav:
 ---
 
 示例： [react-antd](https://fxss5201.github.io/react-antd/) ，本篇文章主要是对示例做下大致讲解。
+
+<code src="./example-demo"></code>
