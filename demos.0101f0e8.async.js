@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_antd_docs=self.webpackChunkreact_antd_docs||[]).push([[433],{13168:function(n,s,t){t.r(s);var c=t(67294),a=t(85893);s.default=function(){return(0,a.jsx)("iframe",{src:"https://fxss5201.github.io/react-antd/#/home/analysis"})}}}]);
