@@ -1,6 +1,5 @@
 /**
  * compact: true
- * title: 示例
  */
 import React from 'react';
 

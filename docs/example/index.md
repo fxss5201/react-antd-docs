@@ -21,7 +21,7 @@ nav:
 扩展配置菜单名称和图标、重定向、子路由：
 
 1. 首页扩展配置需要登录、显示默认水印、标题;
-2. 工作台扩展配置需要登录、配置水印、标题。
+2. 工作台扩展配置需要登录、配置水印、标题、不显示面包屑导航。
 
 ```js
 {
@@ -60,6 +60,7 @@ nav:
       path: '/home/workplace',
       element: <PageWorkplace />,
       requiresAuth: true,
+      isShowBreadcrumb: false,
       watermark: ['aaa', '工作台'],
       meta: {
         title: '工作台',
@@ -69,48 +70,16 @@ nav:
 },
 ```
 
-### 复制粘贴
-
-扩展配置显示默认水印、不显示面包屑导航、菜单名称和图标：
-
-```js
-{
-  path: '/pageCopy',
-  element: <PageCopy />,
-  watermark: true,
-  isShowBreadcrumb: false,
-  meta: {
-    title: '复制粘贴',
-    icon: <CopyOutlined />,
-  }
-},
-```
-
-### 代码渲染
-
-扩展配置不显示面包屑导航、不显示 Tabs 导航栏、菜单名称和图标：
-
-```js
-{
-  path: '/pageCode',
-  element: <PageCode />,
-  isShowBreadcrumb: false,
-  isShowTabs: false,
-  meta: {
-    title: '代码渲染',
-    icon: <CodeOutlined />,
-  }
-},
-```
-
 ### echarts 图表
 
-扩展配置菜单名称和图标：
+扩展配置菜单名称和图标、不显示面包屑导航、不显示 Tabs 导航栏：
 
 ```js
 {
   path: '/pageEcharts',
   element: <PageEcharts />,
+  isShowBreadcrumb: false,
+  isShowTabs: false,
   meta: {
     title: 'echarts图表',
     icon: <AreaChartOutlined />,
