@@ -37,6 +37,8 @@ react-antd 提供了开箱即用的 Mock 功能，能够用方便简单的方式
 
 Mock 文件默认导出一个对象，而对象的每个 Key 对应了一个 Mock 接口，值则是这个接口所对应的返回数据，例如这样的 Mock 文件：
 
+key 的定义如下 `请求方法 请求路由 请求时间`，当请求方式为 `GET` 时可省略，请求时间可省略。
+
 ```js
 // ./mock/users.js
 
@@ -115,6 +117,42 @@ module.exports = {
   ],
 };
 ```
+
+## 请求时间
+
+`package.json` 文件中定义的 `timeout` 为全局接口返回数据需要的时间 1000 毫秒。
+
+```js
+// package.json
+
+  "port": "8888", // 定义 mock 端口及代理配置
+  "timeout": "1000", // 定义 mock 接口返回数据需要的时间，可以方便调节 loading 状态
+```
+
+支持单独配置，配置方式是在 Mock 文件默认导出的对象 key 属性上定义：
+
+```js
+module.exports = {
+  // 返回值也可以是对象形式
+  'GET /api/users/1 0': {
+    key: '1',
+    name: '胡彦斌',
+    age: 32,
+    address: '西湖区湖底公园1号',
+  },
+  // 自定义函数
+  'GET /api/users/2 2000': (ctx) => {
+    ctx.body = {
+      key: '2',
+      name: '胡彦祖',
+      age: 42,
+      address: '西湖区湖底公园1号',
+    };
+  },
+};
+```
+
+`/api/users/1` 立即返回，`/api/users/2` 2000 毫秒返回。
 
 ## 自定义函数
 
