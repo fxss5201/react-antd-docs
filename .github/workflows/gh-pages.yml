@@ -7,9 +7,14 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          # 选择要使用的 node 版本
+          node-version: '14'
       - run: npm install --legacy-peer-deps
       # 文档编译命令，如果是 react 模板需要修改为 npm run docs:build
       - run: npm run build
